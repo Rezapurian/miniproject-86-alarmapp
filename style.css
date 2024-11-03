@@ -1,0 +1,109 @@
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir-Regular.woff) format("woff");
+}
+*{
+    font-family: vazir;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   min-height: 100vh;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+   background: #377dff;
+}
+.hide {
+    display: none;
+}
+.wrapper {
+    background: #f5f5f5;
+    width: 90%;
+    max-width: 31.25rem;
+    padding: 3.12em 5em;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+.timer-display {
+    font-size: 2.18em;
+    text-align: center;
+}
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+.inputs input {
+    width: 2.8em;
+    font-size: 1.3em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0.4em 0.2em;
+}
+#set {
+    background: #377dff;
+    border: none;
+    padding: 0.9em 1.8em;
+    display: block;
+    margin: 1.5em auto 0 auto;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.alarm {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    gap: 1em;
+    margin-top: 10px;
+    margin-left: -25px;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+.alarm span {
+    color: #757683;
+    font-size: 24px;
+}
+.alarm input[type="checkbox"] {
+    appearance: none;
+    height: 2em;
+    width: 3.75em;
+    background: #d2d2d2;
+    border-radius: 1.25em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+.alarm input[type="checkbox"]::before {
+    position: absolute;
+    content: '';
+    background: #fff;
+    height: 1.43em;
+    width: 1.43em;
+    border-radius: 50%;
+    top: 0.25em;
+    left: 0.25em;
+    transition: 0.2s;
+}
+.alarm input[type="checkbox"]:checked {
+    background: #377dff;
+}
+.alarm input[type="checkbox"]:checked::before {
+    left: 2em;
+}
+.deleteButton {
+    background: transparent;
+    border: none;
+}
+.deleteButton i {
+    font-size: 1.5em;
+    color: #377dff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
